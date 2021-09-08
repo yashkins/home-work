@@ -1,0 +1,5 @@
+settings.py
+.vscode/
+.idea/
+env/
+__pycache__/

@@ -1,18 +1,31 @@
-from telegram.ext import Updater, CommandHandler
+import logging
+import settings 
+from telegram.ext import Updater, CommandHandler, MessageHandler, Filters, messagehandler
 
-PROXY = {'proxy_url': 'socks5://t2.learn.python.ru:1080',
-    'urllib3_proxy_kwargs': {'username': 'learn', 'password': 'python'}}
+
+logging.basicConfig(filename='bot.log', level=logging.INFO)
+
+PROXY = {'proxy_url': settings.PROXY_URL,
+    'urllib3_proxy_kwargs': {'username': settings.PROXY_USERNAME, 'password': settings.PROXY_PASSWORD}}
 
 def greet_user(update, context):
     print("Вызван: /start")
     update.message.reply_text("Привет")
 
+def talk_to_me(update, context):
+    text = update.message.text
+    print(text)
+    update.message.reply_text(text)
+
+
 def main():
-    mybot = Updater("1978137503:AAFi3gKfGucEZdQcM79SeNz3O0YTgYaivpA", use_context = True, request_kwargs = PROXY)
+    mybot = Updater(settings.API_KEY, use_context = True, request_kwargs = PROXY)
     dp = mybot.dispatcher
     dp.add_handler(CommandHandler("start", greet_user))
+    dp.add_handler(MessageHandler(Filters.text, talk_to_me))
+    logging.info('Бот стартовал')
     mybot.start_polling()
     mybot.idle()
 
-
-main()
+if __name__=="__main__":
+    main()
