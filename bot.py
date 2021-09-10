@@ -1,5 +1,7 @@
 import logging
 import settings 
+import ephem
+from datetime import date
 from telegram.ext import Updater, CommandHandler, MessageHandler, Filters, messagehandler
 
 
@@ -17,11 +19,18 @@ def talk_to_me(update, context):
     print(text)
     update.message.reply_text(text)
 
+def definition_planet(update,context):
+    planet = update.message.text.split()[1]
+    corrent_date = data.today
+    planet = ephem.planet(f'{corrent_date.year}/{corrent_date.month}/{corrent_date.day}')
+    constellation = ephem.constellation(planet)
+    update.message.reply_text(constellation)
 
 def main():
     mybot = Updater(settings.API_KEY, use_context = True, request_kwargs = PROXY)
     dp = mybot.dispatcher
     dp.add_handler(CommandHandler("start", greet_user))
+    dp.add_handler(CommandHandler("planet", definition_planet))
     dp.add_handler(MessageHandler(Filters.text, talk_to_me))
     logging.info('Бот стартовал')
     mybot.start_polling()
