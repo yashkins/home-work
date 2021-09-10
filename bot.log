@@ -5150,3 +5150,152 @@ INFO:root:Бот стартовал
 INFO:apscheduler.scheduler:Scheduler started
 INFO:telegram.ext.updater:Received signal 2 (SIGINT), stopping...
 INFO:apscheduler.scheduler:Scheduler has been shut down
+INFO:root:Бот стартовал
+INFO:apscheduler.scheduler:Scheduler started
+INFO:telegram.ext.updater:Received signal 2 (SIGINT), stopping...
+INFO:apscheduler.scheduler:Scheduler has been shut down
+INFO:root:Бот стартовал
+INFO:apscheduler.scheduler:Scheduler started
+ERROR:telegram.ext.dispatcher:No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Users\яков\AppData\Local\Programs\Python\Python38\lib\site-packages\telegram\ext\dispatcher.py", line 555, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\Users\яков\AppData\Local\Programs\Python\Python38\lib\site-packages\telegram\ext\handler.py", line 198, in handle_update
+    return self.callback(update, context)
+  File "bot.py", line 24, in definition_planet
+    corrent_date = data.today
+NameError: name 'data' is not defined
+ERROR:telegram.ext.dispatcher:No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Users\яков\AppData\Local\Programs\Python\Python38\lib\site-packages\telegram\ext\dispatcher.py", line 555, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\Users\яков\AppData\Local\Programs\Python\Python38\lib\site-packages\telegram\ext\handler.py", line 198, in handle_update
+    return self.callback(update, context)
+  File "bot.py", line 24, in definition_planet
+    corrent_date = data.today
+NameError: name 'data' is not defined
+INFO:telegram.ext.updater:Received signal 2 (SIGINT), stopping...
+INFO:apscheduler.scheduler:Scheduler has been shut down
+INFO:root:Бот стартовал
+INFO:apscheduler.scheduler:Scheduler started
+ERROR:telegram.ext.dispatcher:No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Users\яков\AppData\Local\Programs\Python\Python38\lib\site-packages\telegram\ext\dispatcher.py", line 555, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\Users\яков\AppData\Local\Programs\Python\Python38\lib\site-packages\telegram\ext\handler.py", line 198, in handle_update
+    return self.callback(update, context)
+  File "bot.py", line 25, in definition_planet
+    planet = ephem.planet(f'{corrent_date.year}/{corrent_date.month}/{corrent_date.day}')
+AttributeError: module 'ephem' has no attribute 'planet'
+INFO:telegram.ext.updater:Received signal 2 (SIGINT), stopping...
+INFO:apscheduler.scheduler:Scheduler has been shut down
+INFO:root:Бот стартовал
+INFO:apscheduler.scheduler:Scheduler started
+ERROR:telegram.ext.dispatcher:No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Users\яков\AppData\Local\Programs\Python\Python38\lib\site-packages\telegram\ext\dispatcher.py", line 555, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\Users\яков\AppData\Local\Programs\Python\Python38\lib\site-packages\telegram\ext\handler.py", line 198, in handle_update
+    return self.callback(update, context)
+  File "bot.py", line 25, in definition_planet
+    planet = ephem.planet(f'{corrent_date.year}/{corrent_date.month}/{corrent_date.day}')
+AttributeError: module 'ephem' has no attribute 'planet'
+INFO:telegram.ext.updater:Received signal 2 (SIGINT), stopping...
+INFO:apscheduler.scheduler:Scheduler has been shut down
+INFO:root:Бот стартовал
+INFO:apscheduler.scheduler:Scheduler started
+ERROR:telegram.ext.dispatcher:No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Users\яков\AppData\Local\Programs\Python\Python38\lib\site-packages\telegram\ext\dispatcher.py", line 555, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\Users\яков\AppData\Local\Programs\Python\Python38\lib\site-packages\telegram\ext\handler.py", line 198, in handle_update
+    return self.callback(update, context)
+  File "bot.py", line 26, in definition_planet
+    planet = ephem.Mars(f'{corrent_date.year}/{corrent_date.month}/{corrent_date.day}')
+AttributeError: 'builtin_function_or_method' object has no attribute 'year'
+INFO:telegram.ext.updater:Received signal 2 (SIGINT), stopping...
+INFO:apscheduler.scheduler:Scheduler has been shut down
+INFO:root:Бот стартовал
+INFO:apscheduler.scheduler:Scheduler started
+INFO:telegram.ext.updater:Received signal 2 (SIGINT), stopping...
+INFO:apscheduler.scheduler:Scheduler has been shut down
+INFO:root:Бот стартовал
+INFO:apscheduler.scheduler:Scheduler started
+ERROR:telegram.ext.dispatcher:No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Users\яков\AppData\Local\Programs\Python\Python38\lib\site-packages\telegram\ext\dispatcher.py", line 555, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\Users\яков\AppData\Local\Programs\Python\Python38\lib\site-packages\telegram\ext\handler.py", line 198, in handle_update
+    return self.callback(update, context)
+  File "bot.py", line 26, in definition_planet
+    planet = ephem.planet(f'{corrent_date.year}/{corrent_date.month}/{corrent_date.day}')
+AttributeError: module 'ephem' has no attribute 'planet'
+ERROR:telegram.ext.dispatcher:No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Users\яков\AppData\Local\Programs\Python\Python38\lib\site-packages\telegram\ext\dispatcher.py", line 555, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\Users\яков\AppData\Local\Programs\Python\Python38\lib\site-packages\telegram\ext\handler.py", line 198, in handle_update
+    return self.callback(update, context)
+  File "bot.py", line 26, in definition_planet
+    planet = ephem.planet(f'{corrent_date.year}/{corrent_date.month}/{corrent_date.day}')
+AttributeError: module 'ephem' has no attribute 'planet'
+INFO:telegram.ext.updater:Received signal 2 (SIGINT), stopping...
+INFO:apscheduler.scheduler:Scheduler has been shut down
+INFO:root:Бот стартовал
+INFO:apscheduler.scheduler:Scheduler started
+INFO:telegram.ext.updater:Received signal 2 (SIGINT), stopping...
+INFO:apscheduler.scheduler:Scheduler has been shut down
+INFO:root:Бот стартовал
+INFO:apscheduler.scheduler:Scheduler started
+ERROR:telegram.ext.dispatcher:No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Users\яков\AppData\Local\Programs\Python\Python38\lib\site-packages\telegram\ext\dispatcher.py", line 555, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\Users\яков\AppData\Local\Programs\Python\Python38\lib\site-packages\telegram\ext\handler.py", line 198, in handle_update
+    return self.callback(update, context)
+  File "bot.py", line 26, in definition_planet
+    planet = ephem.planet_def(f'{corrent_date.year}/{corrent_date.month}/{corrent_date.day}')
+AttributeError: module 'ephem' has no attribute 'planet_def'
+INFO:telegram.ext.updater:Received signal 2 (SIGINT), stopping...
+INFO:apscheduler.scheduler:Scheduler has been shut down
+INFO:root:Бот стартовал
+INFO:apscheduler.scheduler:Scheduler started
+INFO:telegram.ext.updater:Received signal 2 (SIGINT), stopping...
+INFO:apscheduler.scheduler:Scheduler has been shut down
+INFO:root:Бот стартовал
+INFO:apscheduler.scheduler:Scheduler started
+ERROR:telegram.ext.dispatcher:No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Users\яков\AppData\Local\Programs\Python\Python38\lib\site-packages\telegram\ext\dispatcher.py", line 555, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\Users\яков\AppData\Local\Programs\Python\Python38\lib\site-packages\telegram\ext\handler.py", line 198, in handle_update
+    return self.callback(update, context)
+  File "bot.py", line 26, in definition_planet
+    planet = ephem.planet_def(f'{corrent_date.year}/{corrent_date.month}/{corrent_date.day}')
+AttributeError: module 'ephem' has no attribute 'planet_def'
+INFO:root:Бот стартовал
+INFO:apscheduler.scheduler:Scheduler started
+ERROR:telegram.ext.dispatcher:No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Users\яков\AppData\Local\Programs\Python\Python38\lib\site-packages\telegram\ext\dispatcher.py", line 555, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\Users\яков\AppData\Local\Programs\Python\Python38\lib\site-packages\telegram\ext\handler.py", line 198, in handle_update
+    return self.callback(update, context)
+  File "bot.py", line 28, in definition_planet
+    planet = ephem.x(f'{corrent_date.year}/{corrent_date.month}/{corrent_date.day}')
+AttributeError: module 'ephem' has no attribute 'x'
+INFO:telegram.ext.updater:Received signal 2 (SIGINT), stopping...
+INFO:apscheduler.scheduler:Scheduler has been shut down
+INFO:root:Бот стартовал
+INFO:apscheduler.scheduler:Scheduler started
+ERROR:telegram.ext.dispatcher:No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Users\яков\AppData\Local\Programs\Python\Python38\lib\site-packages\telegram\ext\dispatcher.py", line 555, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\Users\яков\AppData\Local\Programs\Python\Python38\lib\site-packages\telegram\ext\handler.py", line 198, in handle_update
+    return self.callback(update, context)
+  File "bot.py", line 27, in definition_planet
+    planet = ephem.planet_def(f'{corrent_date.year}/{corrent_date.month}/{corrent_date.day}')
+AttributeError: module 'ephem' has no attribute 'planet_def'
+INFO:telegram.ext.updater:Received signal 2 (SIGINT), stopping...
+INFO:apscheduler.scheduler:Scheduler has been shut down
