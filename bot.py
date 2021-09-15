@@ -2,7 +2,7 @@ import logging
 
 import settings 
 import ephem
-from datetime import date
+from datetime import date, datetime
 from telegram.ext import Updater, CommandHandler, MessageHandler, Filters, messagehandler
 
 
@@ -23,9 +23,8 @@ def talk_to_me(update, context):
 
 def definition_planet(update,context):
     planet_def = update.message.text.split()[-1].capitalize()
-    print(planet_def)
     corrent_date = date.today()
-    planet = getattr(ephem, planet_def)(f'{corrent_date.year}/{corrent_date.month}/{corrent_date.day}')
+    planet = getattr(ephem, planet_def)(corrent_date.strftime('%Y/%m/%d'))
     constellation = ephem.constellation(planet)
     update.message.reply_text(constellation)
 
