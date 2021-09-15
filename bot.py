@@ -1,5 +1,5 @@
 import logging
-from re import X
+
 import settings 
 import ephem
 from datetime import date
@@ -19,12 +19,13 @@ def talk_to_me(update, context):
     text = update.message.text
     print(text)
     update.message.reply_text(text)
+    
 
 def definition_planet(update,context):
     planet_def = update.message.text.split()[-1].capitalize()
     print(planet_def)
     corrent_date = date.today()
-    planet = ephem.planet_def(f'{corrent_date.year}/{corrent_date.month}/{corrent_date.day}')
+    planet = getattr(ephem, planet_def)(f'{corrent_date.year}/{corrent_date.month}/{corrent_date.day}')
     constellation = ephem.constellation(planet)
     update.message.reply_text(constellation)
 

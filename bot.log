@@ -5299,3 +5299,112 @@ Traceback (most recent call last):
 AttributeError: module 'ephem' has no attribute 'planet_def'
 INFO:telegram.ext.updater:Received signal 2 (SIGINT), stopping...
 INFO:apscheduler.scheduler:Scheduler has been shut down
+INFO:root:Бот стартовал
+INFO:apscheduler.scheduler:Scheduler started
+WARNING:telegram.vendor.ptb_urllib3.urllib3.connectionpool:Retrying (Retry(total=2, connect=None, read=None, redirect=None)) after connection broken by 'NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.contrib.socks.SOCKSHTTPSConnection object at 0x000001D8A05B7FA0>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed')': /bot1978137503:AAFi3gKfGucEZdQcM79SeNz3O0YTgYaivpA/getMe
+WARNING:telegram.vendor.ptb_urllib3.urllib3.connectionpool:Retrying (Retry(total=1, connect=None, read=None, redirect=None)) after connection broken by 'NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.contrib.socks.SOCKSHTTPSConnection object at 0x000001D8A05CA130>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed')': /bot1978137503:AAFi3gKfGucEZdQcM79SeNz3O0YTgYaivpA/getMe
+WARNING:telegram.vendor.ptb_urllib3.urllib3.connectionpool:Retrying (Retry(total=0, connect=None, read=None, redirect=None)) after connection broken by 'NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.contrib.socks.SOCKSHTTPSConnection object at 0x000001D8A05CA280>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed')': /bot1978137503:AAFi3gKfGucEZdQcM79SeNz3O0YTgYaivpA/getMe
+INFO:root:Бот стартовал
+INFO:apscheduler.scheduler:Scheduler started
+WARNING:telegram.vendor.ptb_urllib3.urllib3.connectionpool:Retrying (Retry(total=2, connect=None, read=None, redirect=None)) after connection broken by 'NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.contrib.socks.SOCKSHTTPSConnection object at 0x00000123EB9A7FA0>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed')': /bot1978137503:AAFi3gKfGucEZdQcM79SeNz3O0YTgYaivpA/getMe
+WARNING:telegram.vendor.ptb_urllib3.urllib3.connectionpool:Retrying (Retry(total=1, connect=None, read=None, redirect=None)) after connection broken by 'NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.contrib.socks.SOCKSHTTPSConnection object at 0x00000123EB9BA130>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed')': /bot1978137503:AAFi3gKfGucEZdQcM79SeNz3O0YTgYaivpA/getMe
+WARNING:telegram.vendor.ptb_urllib3.urllib3.connectionpool:Retrying (Retry(total=0, connect=None, read=None, redirect=None)) after connection broken by 'NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.contrib.socks.SOCKSHTTPSConnection object at 0x00000123EB9BA280>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed')': /bot1978137503:AAFi3gKfGucEZdQcM79SeNz3O0YTgYaivpA/getMe
+INFO:root:Бот стартовал
+INFO:apscheduler.scheduler:Scheduler started
+ERROR:telegram.ext.dispatcher:No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Users\яков\AppData\Local\Programs\Python\Python38\lib\site-packages\telegram\ext\dispatcher.py", line 555, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\Users\яков\AppData\Local\Programs\Python\Python38\lib\site-packages\telegram\ext\handler.py", line 198, in handle_update
+    return self.callback(update, context)
+  File "bot.py", line 27, in definition_planet
+    planet = ephem.planet_def(f'{corrent_date.year}/{corrent_date.month}/{corrent_date.day}')
+AttributeError: module 'ephem' has no attribute 'planet_def'
+INFO:telegram.ext.updater:Received signal 2 (SIGINT), stopping...
+INFO:apscheduler.scheduler:Scheduler has been shut down
+INFO:root:Бот стартовал
+INFO:apscheduler.scheduler:Scheduler started
+ERROR:telegram.ext.dispatcher:No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Users\яков\AppData\Local\Programs\Python\Python38\lib\site-packages\telegram\ext\dispatcher.py", line 555, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\Users\яков\AppData\Local\Programs\Python\Python38\lib\site-packages\telegram\ext\handler.py", line 198, in handle_update
+    return self.callback(update, context)
+  File "bot.py", line 28, in definition_planet
+    planet = ephem.planet_def(f'{corrent_date.year}/{corrent_date.month}/{corrent_date.day}')
+AttributeError: module 'ephem' has no attribute 'planet_def'
+INFO:telegram.ext.updater:Received signal 2 (SIGINT), stopping...
+INFO:apscheduler.scheduler:Scheduler has been shut down
+INFO:root:Бот стартовал
+INFO:apscheduler.scheduler:Scheduler started
+ERROR:telegram.ext.dispatcher:No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Users\яков\AppData\Local\Programs\Python\Python38\lib\site-packages\telegram\ext\dispatcher.py", line 555, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\Users\яков\AppData\Local\Programs\Python\Python38\lib\site-packages\telegram\ext\handler.py", line 198, in handle_update
+    return self.callback(update, context)
+  File "bot.py", line 27, in definition_planet
+    planet = ephem.print(planet_def)(f'{corrent_date.year}/{corrent_date.month}/{corrent_date.day}')
+AttributeError: module 'ephem' has no attribute 'print'
+INFO:telegram.ext.updater:Received signal 2 (SIGINT), stopping...
+INFO:apscheduler.scheduler:Scheduler has been shut down
+INFO:root:Бот стартовал
+INFO:apscheduler.scheduler:Scheduler started
+ERROR:telegram.ext.dispatcher:No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Users\яков\AppData\Local\Programs\Python\Python38\lib\site-packages\telegram\ext\dispatcher.py", line 555, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\Users\яков\AppData\Local\Programs\Python\Python38\lib\site-packages\telegram\ext\handler.py", line 198, in handle_update
+    return self.callback(update, context)
+  File "bot.py", line 28, in definition_planet
+    planet = ephem.planet_def(f'{corrent_date.year}/{corrent_date.month}/{corrent_date.day}')
+AttributeError: module 'ephem' has no attribute 'planet_def'
+INFO:telegram.ext.updater:Received signal 2 (SIGINT), stopping...
+INFO:apscheduler.scheduler:Scheduler has been shut down
+INFO:root:Бот стартовал
+INFO:apscheduler.scheduler:Scheduler started
+ERROR:telegram.ext.dispatcher:No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Users\яков\AppData\Local\Programs\Python\Python38\lib\site-packages\telegram\ext\dispatcher.py", line 555, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\Users\яков\AppData\Local\Programs\Python\Python38\lib\site-packages\telegram\ext\handler.py", line 198, in handle_update
+    return self.callback(update, context)
+  File "bot.py", line 28, in definition_planet
+    planet = ephem.planet_def(f'{corrent_date.year}/{corrent_date.month}/{corrent_date.day}')
+AttributeError: module 'ephem' has no attribute 'planet_def'
+INFO:telegram.ext.updater:Received signal 2 (SIGINT), stopping...
+INFO:apscheduler.scheduler:Scheduler has been shut down
+INFO:root:Бот стартовал
+INFO:apscheduler.scheduler:Scheduler started
+INFO:telegram.ext.updater:Received signal 2 (SIGINT), stopping...
+INFO:apscheduler.scheduler:Scheduler has been shut down
+INFO:root:Бот стартовал
+INFO:apscheduler.scheduler:Scheduler started
+ERROR:telegram.ext.dispatcher:No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Users\яков\AppData\Local\Programs\Python\Python38\lib\site-packages\telegram\ext\dispatcher.py", line 555, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\Users\яков\AppData\Local\Programs\Python\Python38\lib\site-packages\telegram\ext\handler.py", line 198, in handle_update
+    return self.callback(update, context)
+  File "bot.py", line 28, in definition_planet
+    planet = getattr(ephem, planet_def(f'{corrent_date.year}/{corrent_date.month}/{corrent_date.day}'))
+TypeError: 'str' object is not callable
+INFO:telegram.ext.updater:Received signal 2 (SIGINT), stopping...
+INFO:apscheduler.scheduler:Scheduler has been shut down
+INFO:root:Бот стартовал
+INFO:apscheduler.scheduler:Scheduler started
+ERROR:telegram.ext.dispatcher:No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Users\яков\AppData\Local\Programs\Python\Python38\lib\site-packages\telegram\ext\dispatcher.py", line 555, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\Users\яков\AppData\Local\Programs\Python\Python38\lib\site-packages\telegram\ext\handler.py", line 198, in handle_update
+    return self.callback(update, context)
+  File "bot.py", line 28, in definition_planet
+    planet = ephem.getattr(ephem, planet_def)(f'{corrent_date.year}/{corrent_date.month}/{corrent_date.day}')
+AttributeError: module 'ephem' has no attribute 'getattr'
+INFO:telegram.ext.updater:Received signal 2 (SIGINT), stopping...
+INFO:apscheduler.scheduler:Scheduler has been shut down
+INFO:root:Бот стартовал
+INFO:apscheduler.scheduler:Scheduler started
+INFO:telegram.ext.updater:Received signal 2 (SIGINT), stopping...
+INFO:apscheduler.scheduler:Scheduler has been shut down
